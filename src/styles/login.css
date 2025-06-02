@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 90%;
+  height: 70vh;
+  margin-top: 40px;
+}
+
+.login-form {
+  width: 55%;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  color: #333;
+}
+
+label {
+  font-size: 18px;
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Tambahkan jarak atas khusus untuk label Password agar terpisah dari label Email */
+label[for="password"] {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Hilangkan margin-top di input password supaya tidak tambah jarak */
+input[type="password"] {
+  /* margin-top: 20px; */ /* dihapus */
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #6c42f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #5a37d6;
+}
+
+.signup-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.signup-link a {
+  color: #6c42f5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.image-container {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    font-size: 18px;
+  }
+
+  .signup-link {
+    font-size: 16px;
+  }
+}
