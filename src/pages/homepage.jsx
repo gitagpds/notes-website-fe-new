@@ -52,7 +52,7 @@ const HomePage = () => {
         style={{
           marginLeft: "100px",
           minHeight: "1000vh",
-          maxWidth: "7000px",
+          maxWidth: "2000px",
           paddingLeft: "40px",
           paddingTop: "60px",
         }}
@@ -60,14 +60,14 @@ const HomePage = () => {
         <div className="row align-items-center">
           <div
             className="col-md-6 text-center text-md-start main-content-text"
-            style={{ maxWidth: "4000px" }}
+            style={{ maxWidth: "1000px" }}
           >
-            <p className="lead" style={{ fontSize: "150px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
+            <p className="lead" style={{ fontSize: "70px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
               <strong>
                 Memomate helps you organize and take notes efficiently. Start writing now to keep your thoughts structured.
               </strong>
             </p>
-            <Link to="/add-note" className="btn btn-lg btn-purple text-white" style={{ fontSize: "150px", padding: "80px 180px" }}>
+            <Link to="/add-note" className="btn btn-lg btn-purple text-white" style={{ fontSize: "70px", padding: "40px 90px" }}>
               + Note-taking
             </Link>
           </div>
