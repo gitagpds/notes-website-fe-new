@@ -52,31 +52,51 @@ const HomePage = () => {
         style={{
           marginLeft: "280px",
           minHeight: "100vh",
-          maxWidth: "700px",
-          paddingLeft: "40px",
+          maxWidth: "2000px",          // (1) Diperbesar dari 700px ke 900px
+          paddingLeft: "50px",        // (2) Padding kiri diperbesar dari 40px ke 50px
           paddingTop: "60px",
         }}
       >
         <div className="row align-items-center">
           <div
             className="col-md-6 text-center text-md-start main-content-text"
-            style={{ maxWidth: "450px" }}
+            style={{
+              maxWidth: "1000px",       // (3) Diperbesar dari 450px ke 600px
+            }}
           >
-            <p className="lead" style={{ fontSize: "18px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
+            <p
+              className="lead"
+              style={{
+                fontSize: "100px",       // (4) Font size diperbesar dari 18px ke 20px
+                fontWeight: "bold",
+                color: "rgba(0, 0, 0, 0.616)",
+              }}
+            >
               <strong>
-                Memomate helps you organize and take notes efficiently. Start writing now to keep your thoughts structured.
+                Memomate helps you organize and take notes efficiently. Start
+                writing now to keep your thoughts structured.
               </strong>
             </p>
-            <Link to="/add-note" className="btn btn-lg btn-purple text-white" style={{ fontSize: "18px", padding: "8px 18px" }}>
+            <Link
+              to="/add-note"
+              className="btn btn-lg btn-purple text-white"
+              style={{
+                fontSize: "50px",      // (5) Tombol font size diperbesar dari 18px ke 20px
+                padding: "10px 22px",  // Padding tombol diperbesar agar proporsional
+              }}
+            >
               + Note-taking
             </Link>
           </div>
-          <div className="col-md-6 text-center" style={{ marginTop: "20px" }}>
+          <div
+            className="col-md-6 text-center"
+            style={{ marginTop: "20px" }}
+          >
             <img
               src={homepageImg}
               alt="Homepage Illustration"
               className="homepage-img"
-              style={{ maxWidth: "80%" }}
+              style={{ maxWidth: "85%" }}  // (6) Gambar sedikit diperbesar dari 80% ke 85%
             />
           </div>
         </div>
