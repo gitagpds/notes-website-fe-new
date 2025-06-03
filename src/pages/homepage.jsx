@@ -6,9 +6,22 @@ import logoImg from "../assets/logo.png";
 
 const HomePage = () => {
   return (
-    <div className="d-flex">
-      {/* Sidebar */}
-      <div className="bg-light border-end" id="sidebar-wrapper">
+    <>
+      {/* Sidebar dengan posisi fixed */}
+      <div
+        id="sidebar-wrapper"
+        style={{
+          width: "280px",
+          minHeight: "100vh",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          backgroundColor: "#f8f9fa",
+          borderRight: "1px solid #dee2e6",
+          zIndex: 1000,
+          paddingTop: "20px",
+        }}
+      >
         <div className="sidebar-heading text-center py-4">
           <img src={logoImg} alt="Memomate Logo" width="50" />
           <strong className="brand-name">Memomate</strong>
@@ -24,19 +37,29 @@ const HomePage = () => {
           >
             <i className="bi bi-house-door"></i> Home
           </Link>
-          <Link to="/view-notes" className="list-group-item list-group-item-action">
+          <Link
+            to="/view-notes"
+            className="list-group-item list-group-item-action"
+          >
             <i className="bi bi-journal-text"></i> Your Notes
           </Link>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="main-content container-fluid p-4">
+      {/* Main content dengan margin kiri agar tidak tertutup sidebar */}
+      <div
+        className="container-fluid p-4"
+        style={{ marginLeft: "280px", minHeight: "100vh" }}
+      >
         <div className="row align-items-center">
-          <div className="col-md-5 text-center text-md-start main-content-text" style={{ paddingLeft: "80px" }}>
+          <div
+            className="col-md-5 text-center text-md-start main-content-text"
+            style={{ paddingLeft: "80px" }}
+          >
             <p className="lead">
               <strong>
-                Memomate helps you organize and take notes efficiently. Start writing now to keep your thoughts structured.
+                Memomate helps you organize and take notes efficiently. Start
+                writing now to keep your thoughts structured.
               </strong>
             </p>
             <Link to="/add-note" className="btn btn-lg btn-purple text-white">
@@ -52,7 +75,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
