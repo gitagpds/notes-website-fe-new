@@ -63,7 +63,11 @@ const InputNote = () => {
       </div>
 
       {/* Main Content */}
-      <div id="page-content-wrapper" className="flex-grow-1 p-4">
+      <div
+        id="page-content-wrapper"
+        className="flex-grow-1"
+        style={{ marginLeft: "250px", padding: "20px" }}
+      >
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
