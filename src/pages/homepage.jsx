@@ -50,9 +50,9 @@ const HomePage = () => {
       <div
         className="container-fluid p-4 main-content"
         style={{
-          marginLeft: "100px",
-          minHeight: "1000vh",
-          maxWidth: "2000px",
+          marginLeft: "280px",
+          minHeight: "100vh",
+          maxWidth: "1000px",
           paddingLeft: "40px",
           paddingTop: "60px",
         }}
@@ -60,18 +60,18 @@ const HomePage = () => {
         <div className="row align-items-center">
           <div
             className="col-md-6 text-center text-md-start main-content-text"
-            style={{ maxWidth: "1000px" }}
+            style={{ maxWidth: "600px" }}
           >
-            <p className="lead" style={{ fontSize: "70px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
+            <p className="lead" style={{ fontSize: "18px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
               <strong>
                 Memomate helps you organize and take notes efficiently. Start writing now to keep your thoughts structured.
               </strong>
             </p>
-            <Link to="/add-note" className="btn btn-lg btn-purple text-white" style={{ fontSize: "70px", padding: "40px 90px" }}>
+            <Link to="/add-note" className="btn btn-lg btn-purple text-white" style={{ fontSize: "18px", padding: "8px 18px" }}>
               + Note-taking
             </Link>
           </div>
-          <div className="col-md-6 text-center" style={{ marginTop: "200px" }}>
+          <div className="col-md-6 text-center" style={{ marginTop: "20px" }}>
             <img
               src={homepageImg}
               alt="Homepage Illustration"
