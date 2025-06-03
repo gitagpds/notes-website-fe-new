@@ -52,7 +52,7 @@ const HomePage = () => {
         style={{
           marginLeft: "280px",
           minHeight: "100vh",
-          maxWidth: "1000px",
+          maxWidth: "1200px",
           paddingLeft: "40px",
           paddingTop: "60px",
         }}
@@ -60,7 +60,7 @@ const HomePage = () => {
         <div className="row align-items-center">
           <div
             className="col-md-6 text-center text-md-start main-content-text"
-            style={{ maxWidth: "600px" }}
+            style={{ maxWidth: "800px" }}
           >
             <p className="lead" style={{ fontSize: "18px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
               <strong>
