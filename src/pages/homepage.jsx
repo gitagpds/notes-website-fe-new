@@ -31,7 +31,7 @@ const HomePage = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container-fluid p-4">
+      <div className="main-content container-fluid p-4">
         <div className="row align-items-center">
           <div className="col-md-5 text-center text-md-start main-content-text" style={{ paddingLeft: "80px" }}>
             <p className="lead">
