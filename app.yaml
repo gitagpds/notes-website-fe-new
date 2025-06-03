@@ -3,13 +3,12 @@ service: notesgita
 instance_class: F1
 
 handlers:
-  - url: /
+  # Serve static files from /dist folder
+  - url: /(.*\.(js|css|png|jpg|jpeg|gif|svg|ico|json|txt|woff|woff2|ttf|eot|map))
+    static_files: dist/\1
+    upload: dist/.*
+
+  # Catch-all: send all other routes to index.html
+  - url: /.*
     static_files: dist/index.html
     upload: dist/index.html
-
-  - url: /(.*)
-    static_files: dist/\1
-    upload: dist/(.*)
-
-  - url: /.*
-    script: auto
