@@ -1,6 +1,16 @@
 #sidebar-wrapper {
   width: 280px;
   min-height: 100vh;
+  position: fixed; /* Sidebar tetap di kiri */
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  z-index: 1000;
+}
+
+.main-content {
+  margin-left: 280px; /* Beri ruang untuk sidebar */
+  width: calc(100% - 280px);
 }
 
 .sidebar-heading img {
@@ -65,4 +75,16 @@
 
 .btn-purple:hover {
   background-color: #5a3796;
+}
+
+/* Tambahan: Responsif */
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
 }
