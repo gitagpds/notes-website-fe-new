@@ -15,7 +15,6 @@ const Login = () => {
     setMsg("");
 
     try {
-      // pakai BASE_URL di sini, pastikan BASE_URL di util.js sudah ada dan ada trailing slash di akhir
       const response = await fetch(`${BASE_URL}login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -27,7 +26,7 @@ const Login = () => {
       if (response.ok) {
         localStorage.setItem("token", result.token);
         alert("Login berhasil!");
-        navigate("/home_page"); // sesuaikan route-nya kalau beda
+        navigate("/home_page");
       } else {
         setMsg(result.message || "Login gagal");
       }
@@ -44,6 +43,8 @@ const Login = () => {
         <form onSubmit={handleLogin}>
           <label htmlFor="email">Email Address</label>
           <input
+            id="email"
+            name="email"
             type="email"
             placeholder="Inputkan alamat email"
             required
@@ -53,6 +54,8 @@ const Login = () => {
 
           <label htmlFor="password">Password</label>
           <input
+            id="password"
+            name="password"
             type="password"
             placeholder="Inputkan password"
             required
