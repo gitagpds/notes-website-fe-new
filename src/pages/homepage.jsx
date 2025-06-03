@@ -60,14 +60,14 @@ const HomePage = () => {
         <div className="row align-items-center">
           <div
             className="col-md-6 text-center text-md-start main-content-text"
-            style={{ maxWidth: "450px" }}
+            style={{ maxWidth: "400px" }}
           >
-            <p className="lead" style={{ fontSize: "18px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
+            <p className="lead" style={{ fontSize: "15px", fontWeight: "bold", color: "rgba(0, 0, 0, 0.616)" }}>
               <strong>
                 Memomate helps you organize and take notes efficiently. Start writing now to keep your thoughts structured.
               </strong>
             </p>
-            <Link to="/add-note" className="btn btn-lg btn-purple text-white" style={{ fontSize: "18px", padding: "8px 18px" }}>
+            <Link to="/add-note" className="btn btn-lg btn-purple text-white" style={{ fontSize: "15px", padding: "8px 18px" }}>
               + Note-taking
             </Link>
           </div>
