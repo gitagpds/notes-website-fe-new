@@ -7,7 +7,7 @@ import logoImg from "../assets/logo.png";
 const HomePage = () => {
   return (
     <>
-      {/* Sidebar tetap */}
+      {/* Sidebar fixed kiri */}
       <div
         id="sidebar-wrapper"
         style={{
@@ -46,30 +46,30 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Main content diperbesar ekstrem */}
+      {/* Main content dengan margin agar tidak tertutup sidebar */}
       <div
         className="container-fluid p-4 main-content"
         style={{
           marginLeft: "280px",
           minHeight: "100vh",
-          maxWidth: "1600px",         // (1) Diperbesar ekstrem
-          paddingLeft: "100px",       // (2) Padding kiri diperbesar drastis
-          paddingTop: "100px",        // (3) Padding atas diperbesar
+          maxWidth: "900px",          // (1) Diperbesar dari 700px ke 900px
+          paddingLeft: "50px",        // (2) Padding kiri diperbesar dari 40px ke 50px
+          paddingTop: "60px",
         }}
       >
         <div className="row align-items-center">
           <div
             className="col-md-6 text-center text-md-start main-content-text"
             style={{
-              maxWidth: "1000px",      // (4) Lebar teks container diperluas
+              maxWidth: "600px",       // (3) Diperbesar dari 450px ke 600px
             }}
           >
             <p
               className="lead"
               style={{
-                fontSize: "60px",       // (5) Font teks diperbesar drastis
+                fontSize: "20px",       // (4) Font size diperbesar dari 18px ke 20px
                 fontWeight: "bold",
-                color: "rgba(0, 0, 0, 0.7)",
+                color: "rgba(0, 0, 0, 0.616)",
               }}
             >
               <strong>
@@ -81,8 +81,8 @@ const HomePage = () => {
               to="/add-note"
               className="btn btn-lg btn-purple text-white"
               style={{
-                fontSize: "40px",       // (6) Ukuran teks tombol diperbesar
-                padding: "20px 40px",   // (7) Padding tombol diperbesar
+                fontSize: "20px",      // (5) Tombol font size diperbesar dari 18px ke 20px
+                padding: "10px 22px",  // Padding tombol diperbesar agar proporsional
               }}
             >
               + Note-taking
@@ -90,15 +90,13 @@ const HomePage = () => {
           </div>
           <div
             className="col-md-6 text-center"
-            style={{ marginTop: "40px" }}
+            style={{ marginTop: "20px" }}
           >
             <img
               src={homepageImg}
               alt="Homepage Illustration"
               className="homepage-img"
-              style={{
-                maxWidth: "100%",       // (8) Gambar tampil full lebar kolom
-              }}
+              style={{ maxWidth: "85%" }}  // (6) Gambar sedikit diperbesar dari 80% ke 85%
             />
           </div>
         </div>
@@ -106,5 +104,3 @@ const HomePage = () => {
     </>
   );
 };
-
-export default HomePage;
