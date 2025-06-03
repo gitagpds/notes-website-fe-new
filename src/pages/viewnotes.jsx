@@ -117,7 +117,7 @@ const ViewNotesPage = () => {
 
       {modalContent && (
         <div className="modal fade show" id="dynamic-modal" style={{ display: "block" }}>
-          <div className="modal-dialog modal-fullscreen">
+          <div className="modal-dialog" style={{ maxWidth: "95%", width: "95%" }}>
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">{modalContent.title}</h5>
